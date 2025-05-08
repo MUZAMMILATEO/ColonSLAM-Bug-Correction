@@ -13,10 +13,33 @@ To install the ColonSLAM environment, simply use conda as:
 ``` bash
 conda env create -f environment.yml
 ```
-**Additionally:** Run the following command to install *googledrivedownloader*
+**Additionally:** Run the following command to install *googledrivedownloader*, *einops*, *opencv*, and *matplotlib*
 ```python
 pip install git+https://github.com/ndrplz/google-drive-downloader.git
+pip install einops
+pip install opencv-python
+pip install matplotlib
 ```
+
+---
+## Additional Setup (Important)
+
+Before running the SLAM pipeline, ensure the following auxiliary files are in place:
+
+1. **TimeSformer Configuration**  
+   Retrieve the `TimeSformer_divST_8x32_224.yaml` file and place it in `vg_networks/endofm/data/`:
+   ```bash
+   cd ./ColonSLAM/vg_networks/endofm
+   mkdir -p data
+   wget https://raw.githubusercontent.com/med-air/Endo-FM/main/models/configs/Kinetics/TimeSformer_divST_8x32_224.yaml \
+        -O vg_networks/endofm/data/TimeSformer_divST_8x32_224.yaml
+   ```
+
+2. **Pre-trained Endo-FM Weights**
+   Download the endo_fm.pth checkpoint from the link provided in [TimeSformer repo](https://github.com/med-air/Endo-FM) and save it alongside the configuration:
+   ```bash
+   ./ColonSLAM/vg_networks/endofm/data/endo_fm.pth
+   ```
 
 ## Download trained models and evaluation data
 
