@@ -9,7 +9,7 @@ from transformers import ViTModel
 try:
     from google_drive_downloader import GoogleDriveDownloader as gdd
 except ImportError:
-    import googledrivedownloader as gdd
+    import googledrivedownloader as gdd 
 
 from .cct import cct_14_7x2_384
 from .aggregation import Flatten
