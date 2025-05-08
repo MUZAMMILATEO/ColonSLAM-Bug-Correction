@@ -13,6 +13,10 @@ To install the ColonSLAM environment, simply use conda as:
 ``` bash
 conda env create -f environment.yml
 ```
+**Additionally:** Run the following command to install *googledrivedownloader*
+```python
+pip install git+https://github.com/ndrplz/google-drive-downloader.git
+```
 
 ## Download trained models and evaluation data
 
