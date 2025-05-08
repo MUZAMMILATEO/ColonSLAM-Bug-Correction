@@ -22,5 +22,5 @@ dependencies:
     - transformers==4.37.2
     - timm==0.9.12
     - fvcore==0.1.5.post20221221
-    - kornia==0.7.1
+    - kornia==0.7.1 
     
