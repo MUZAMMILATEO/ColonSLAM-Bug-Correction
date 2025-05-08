@@ -41,6 +41,7 @@ class TopologicalMapSLAM:
         self.num_regional_nodes = 0
 
         # self.default_image = cv2.resize(cv2.imread(f'{ASSETS_PATH}/noimages.jpg'), (250, 200))
+        
         # load a default “no image” placeholder, or fall back to a blank if it’s missing
         img_path = os.path.join(ASSETS_PATH, 'noimages.jpg')
         raw = cv2.imread(img_path)
