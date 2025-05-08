@@ -11,14 +11,39 @@ ColonSLAM is a metric-topological SLAM algorithm able to build a topological gra
 To install the ColonSLAM environment, simply use conda as:
 
 ``` bash
-conda create -f environment.yml
+conda env create -f environment.yml
 ```
 
 ## Download trained models and evaluation data
 
-First, download the trained models, which can be found [here](https://unizares-my.sharepoint.com/:f:/g/personal/684222_unizar_es/Eh5a668vyadJiotwQEl-LK0BVzlnIKUv8jYFBstzaQORYg?e=JAToB6).
+First, download the trained models, which can be found [here](https://unizares-my.sharepoint.com/:f:/g/personal/684222_unizar_es/Eh5a668vyadJiotwQEl-LK0BVzlnIKUv8jYFBstzaQORYg?e=JAToB6). 
 
 The images used for evaluation can be found [here](https://unizares-my.sharepoint.com/:f:/g/personal/684222_unizar_es/EmsMj__CHPVEpMdbCF9yaUABHwE2mKaJkvRLf7H6EfBUKw?e=MpDtzl).
+
+Save the downloaded models and datasets in the following directory structure
+```bash
+./ColonSLAM
+├── checkpoints
+│   ├── endofm_cls_0_0_224_schedule_resize_none
+│   │   └── best_model.pth
+│   ├── resnet18_netvlad_64_0_1_resize_none
+│   │   └── best_model.pth
+│   └── … (other experiment folders)
+├── assets
+│   └── noimages.jpg
+├── topometric
+│   └── topometric
+│       ├── 027
+│       ├── 035
+│       ├── reuse
+│       ├── 027.png
+│       ├── 027.txt
+│       ├── 035.png
+│       ├── 035.txt
+│       └── … (other sequence folders and files)
+└── other folders and files
+
+```
 
 
 ## Usage
