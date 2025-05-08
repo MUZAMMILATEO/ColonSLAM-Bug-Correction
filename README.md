@@ -36,7 +36,7 @@ Before running the SLAM pipeline, ensure the following auxiliary files are in pl
    ```
 
 2. **Pre-trained Endo-FM Weights**
-   Download the endo_fm.pth checkpoint from the link provided in [TimeSformer repo](https://github.com/med-air/Endo-FM) and save it alongside the configuration:
+   Download the endo_fm.pth checkpoint from the link provided in [Endo-FM repo](https://github.com/med-air/Endo-FM) and save it alongside the configuration:
    ```bash
    ./ColonSLAM/vg_networks/endofm/data/endo_fm.pth
    ```
